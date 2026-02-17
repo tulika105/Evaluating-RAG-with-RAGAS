@@ -1,1 +1,1 @@
-# Evaluating-RAG-with-RAGAS
+# RAG Pipeline Evaluation using RAGAS
