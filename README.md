@@ -110,9 +110,9 @@ Calculation:
 
 ---
 
-### **2️⃣ Context Recall** - 
+### **2️⃣ Context Recall** 
 
-**What It Measures**
+**What It Measures** - 
 Did the retriever retrieve all necessary information to answer the question? (Requires ground truth)
 
 **Internal Process**:
@@ -133,9 +133,9 @@ Calculation:
 
 ---
 
-### **3️⃣ Faithfulness** -
+### **3️⃣ Faithfulness** 
 
-**What It Measures**
+**What It Measures** - 
 Is the generated answer grounded in the retrieved context? (Detects hallucinations)
 
 **Internal Process**:
@@ -163,9 +163,9 @@ Calculation:
 
 ---
 
-### **4️⃣ Answer Correctness** -
+### **4️⃣ Answer Correctness** 
 
-**What It Measures**
+**What It Measures** - 
 How semantically similar is the generated answer to the ground truth? (Requires ground truth).
 
 **Internal Process**:
