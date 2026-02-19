@@ -163,7 +163,7 @@ Calculation:
 
 ---
 
-### 🏆 **4️⃣ Answer Correctness**
+### **4️⃣ Answer Correctness**
 
 **What It Measures**
 How semantically similar is the generated answer to the ground truth? (Requires ground truth).
