@@ -187,3 +187,35 @@ Process:
 Example:
   Cosine Similarity = 0.92
 ```
+
+---
+
+## Evaluation Results
+<img width="1717" height="601" alt="Screenshot 2026-04-13 192537" src="https://github.com/user-attachments/assets/db2166b6-5631-445f-b1d7-6b3354e09a50" />
+<img width="1711" height="577" alt="Screenshot 2026-04-13 192646" src="https://github.com/user-attachments/assets/00b41bd1-d31a-424c-87ad-c38e1795bfc3" />
+
+---
+
+## Analysis
+
+**Retriever Performance**
+
+- Achieved perfect context precision (1.0) across all five questions, indicating that all retrieved chunks were relevant.
+- Achieved context recall of 1.0 for four out of five questions, demonstrating strong coverage of required information.
+- For the multi-part question on heart-healthy fats, context recall dropped to 0.5, indicating partial retrieval of necessary information.
+- The retriever performs strongly for single-topic questions but shows slight limitations when handling multi-aspect queries.
+
+**Generator Performance**
+
+- Achieved high faithfulness scores (1.0 for four questions and 0.75 for one), indicating strong grounding and minimal hallucination.
+- Demonstrates consistent alignment between generated answers and retrieved context.
+- Answer correctness scores ranged from 0.417 to 0.917, reflecting varying degrees of semantic alignment with reference answers.
+- Lower correctness scores were observed in multi-aspect question, suggesting partial incompleteness.
+- High correctness (0.909–0.917) in most cases indicates strong semantic alignment with reference answers.
+
+## Further improvements
+
+- Increase k to improve recall for multi-part questions and reduce incomplete coverage.
+- Refine the prompt to enforce completeness, ensuring the generator includes all relevant aspects mentioned in the context.
+- Adjust chunk size and overlap (slightly larger chunks with higher overlap) to prevent splitting related concepts across chunks.
+- Expand the evaluation dataset (20–30 questions) to obtain more stable and statistically meaningful performance metrics.
