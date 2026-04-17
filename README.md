@@ -12,36 +12,7 @@ This project implements and evaluates a **RAG pipeline** using the **RAGAS (Retr
   
 ## RAGAS Architecture
 
-```
-Raw Generation Output
-         ↓
-    ┌────────────────────────────────────────┐
-    │   RAGAS Evaluation Framework           │
-    ├────────────────────────────────────────┤
-    │ Input Components:                       │
-    │ • Question/Query                        │
-    │ • Generated Answer                      │
-    │ • Retrieved Contexts                    │
-    │ • Ground Truth/reference                │
-    └────────────────┬───────────────────────┘
-                     ↓
-         ┌──────────────────────────┐
-         │  Metric Calculations:    │
-         ├──────────────────────────┤
-         │ 1. Faithfulness          │
-         │ 2. Context Recall        │
-         │ 3. Context Precision     │
-         │ 4. Answer Correctness    │
-         └────────────┬─────────────┘
-                      ↓
-         ┌──────────────────────────┐
-         │  Aggregated Scores       │
-         │  (0-1 for each metric)   │
-         └────────────┬─────────────┘
-                      ↓
-         RAG Quality Assessment Report
-```
-
+<img width="3725" height="3520" alt="Evaluating RAG with RAGAS" src="https://github.com/user-attachments/assets/96f2efa0-a981-4d71-8b8f-40e80ff1ed37" />
 
 ## Two Core Evaluation Approaches in RAGAS
 
